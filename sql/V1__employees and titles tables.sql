@@ -12,7 +12,8 @@ GO
 CREATE TABLE [dbo].[employees]
 (
 	[id] [int] IDENTITY (1,1) NOT NULL,
-	[name] [varchar] (50) NOT NULL,
+	[first_name] [varchar] (50) NOT NULL,
+	[last_name] [varchar] (50) NOT NULL,
 	[title_id] [int] NOT NULL,
 	CONSTRAINT [PK_employees] PRIMARY KEY CLUSTERED
 	(
