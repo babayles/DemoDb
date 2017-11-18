@@ -1,8 +1,8 @@
 Push-Location; Import-Module sqlps -DisableNameChecking; Pop-Location
 
 $serverPath = "SQLSERVER:\SQL\localhost\Default"
-$databaseName = "<database>_compare"
-$sourceDatabaseName = "<database>"
+$databaseName = "Demo_compare"
+$sourceDatabaseName = "Demo"
 $restoreFrom = join-path (Get-Location) "$sourceDatabaseName-before.bak"
 
 $databasePath = join-path $serverPath "Databases\$databaseName"
